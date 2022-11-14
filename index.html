@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylereset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="form-box">
+      <div class="intro">
+        <img src="giveaway.svg" alt="giveaway" class="giveaway" />
+        <img src="star.svg" alt="star" class="star" />
+        <h1>GIVEAWAY</h1>
+        <p>Register now to win exciting prizes.</p>
+      </div>
+      <div class="form">
+        <form>
+          <fieldset>
+            <div class="test">
+              <label for="firstName" class="name"
+                >First Name: <input type="text" name="firstName" id="firstName"
+              /></label>
+
+              <label for="lastName" class="name"
+                >Last Name: <input type="text" name="lastName" id="lastName"
+              /></label>
+            </div>
+            <label for="phoneNumber"
+              >Phone Number:
+              <input type="number" name="phoneNumber" id="phoneNumber"
+            /></label>
+
+            <label for="emailAddress"
+              >Email Address:
+              <input type="email" name="emailAddress" id="emailAddress"
+            /></label>
+
+            <label>Do you want our special Autumn Newsletter?</label>
+            <div class="test2">
+              <label for="news"
+                ><input type="radio" id="news" name="news" /> Yes</label
+              >
+
+              <label for="newsNo"
+                ><input type="radio" id="newsNo" name="news" /> No</label
+              >
+            </div>
+
+            <label for="message"
+              >Leave Us a Message:
+              <textarea id="message" name="message" rows="2"></textarea>
+            </label>
+
+            <input type="submit" value="REGISTER NOW" />
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
