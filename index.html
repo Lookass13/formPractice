@@ -27,27 +27,38 @@
           <fieldset>
             <div class="test">
               <label for="firstName" class="name"
-                >First Name: <input type="text" name="firstName" id="firstName"
+                >First Name:
+                <input type="text" name="firstName" id="firstName" required
               /></label>
 
               <label for="lastName" class="name"
-                >Last Name: <input type="text" name="lastName" id="lastName"
+                >Last Name:
+                <input type="text" name="lastName" id="lastName" required
               /></label>
             </div>
             <label for="phoneNumber"
               >Phone Number:
-              <input type="number" name="phoneNumber" id="phoneNumber"
+              <input
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                required
+                pattern="[0-9]{9}"
             /></label>
 
             <label for="emailAddress"
               >Email Address:
-              <input type="email" name="emailAddress" id="emailAddress"
+              <input
+                type="email"
+                name="emailAddress"
+                id="emailAddress"
+                required
             /></label>
 
             <label>Do you want our special Autumn Newsletter?</label>
             <div class="test2">
               <label for="news"
-                ><input type="radio" id="news" name="news" /> Yes</label
+                ><input type="radio" id="news" name="news" checked /> Yes</label
               >
 
               <label for="newsNo"
